@@ -21,6 +21,8 @@
 		4CB2365018BDFA7500D979ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB2363218BDFA7500D979ED /* UIKit.framework */; };
 		4CB2365818BDFA7500D979ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2365618BDFA7500D979ED /* InfoPlist.strings */; };
 		4CB2365A18BDFA7500D979ED /* NRTextTransitionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2365918BDFA7500D979ED /* NRTextTransitionsExampleTests.m */; };
+		4CB2367918BDFD2100D979ED /* UIView+NRTextTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2367818BDFD2100D979ED /* UIView+NRTextTransitions.m */; };
+		4CB2367F18BE192000D979ED /* NRTextTransitionCompletionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2367E18BE192000D979ED /* NRTextTransitionCompletionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		4CB2365518BDFA7500D979ED /* NRTextTransitionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NRTextTransitionsExampleTests-Info.plist"; sourceTree = "<group>"; };
 		4CB2365718BDFA7500D979ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CB2365918BDFA7500D979ED /* NRTextTransitionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRTextTransitionsExampleTests.m; sourceTree = "<group>"; };
+		4CB2367718BDFD2100D979ED /* UIView+NRTextTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+NRTextTransitions.h"; path = "../UIView+NRTextTransitions.h"; sourceTree = "<group>"; };
+		4CB2367818BDFD2100D979ED /* UIView+NRTextTransitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+NRTextTransitions.m"; path = "../UIView+NRTextTransitions.m"; sourceTree = "<group>"; };
+		4CB2367D18BE192000D979ED /* NRTextTransitionCompletionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NRTextTransitionCompletionManager.h; path = ../NRTextTransitionCompletionManager.h; sourceTree = "<group>"; };
+		4CB2367E18BE192000D979ED /* NRTextTransitionCompletionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NRTextTransitionCompletionManager.m; path = ../NRTextTransitionCompletionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 		4CB2362218BDFA7400D979ED = {
 			isa = PBXGroup;
 			children = (
+				4CB2367718BDFD2100D979ED /* UIView+NRTextTransitions.h */,
+				4CB2367818BDFD2100D979ED /* UIView+NRTextTransitions.m */,
+				4CB2367D18BE192000D979ED /* NRTextTransitionCompletionManager.h */,
+				4CB2367E18BE192000D979ED /* NRTextTransitionCompletionManager.m */,
 				4CB2363418BDFA7500D979ED /* NRTextTransitionsExample */,
 				4CB2365318BDFA7500D979ED /* NRTextTransitionsExampleTests */,
 				4CB2362D18BDFA7500D979ED /* Frameworks */,
@@ -248,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB2367918BDFD2100D979ED /* UIView+NRTextTransitions.m in Sources */,
 				4CB2364518BDFA7500D979ED /* ViewController.m in Sources */,
+				4CB2367F18BE192000D979ED /* NRTextTransitionCompletionManager.m in Sources */,
 				4CB2363F18BDFA7500D979ED /* AppDelegate.m in Sources */,
 				4CB2363B18BDFA7500D979ED /* main.m in Sources */,
 			);
