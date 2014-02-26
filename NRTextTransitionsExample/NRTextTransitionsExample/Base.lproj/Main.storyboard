@@ -16,26 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm the old text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTg-Us-hwJ">
-                                <rect key="frame" x="20" y="273" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm the old text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTg-Us-hwJ">
+                                <rect key="frame" x="20" y="194" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Gln-IA-BMs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIView animateWithDuration API won't work" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-hT-x49">
+                                <rect key="frame" x="20" y="271" width="280" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIView animateWithDuration API won't work" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-hT-x49">
-                                <rect key="frame" x="20" y="380" width="280" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09u-bW-XPO">
+                                <rect key="frame" x="20" y="74" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0xc-E9-thZ"/>
+                                </constraints>
+                                <state key="normal" title="Animate Labels Again!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TCM-aB-7qC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cTg-Us-hwJ" firstAttribute="top" secondItem="09u-bW-XPO" secondAttribute="bottom" constant="90" id="47c-GI-bAH"/>
+                            <constraint firstItem="kaa-hT-x49" firstAttribute="leading" secondItem="cTg-Us-hwJ" secondAttribute="leading" id="5w1-L0-tV0"/>
+                            <constraint firstItem="09u-bW-XPO" firstAttribute="trailing" secondItem="cTg-Us-hwJ" secondAttribute="trailing" id="7rF-IW-vLp"/>
+                            <constraint firstAttribute="trailing" secondItem="09u-bW-XPO" secondAttribute="trailing" constant="20" symbolic="YES" id="AN5-pH-dZA"/>
+                            <constraint firstItem="kaa-hT-x49" firstAttribute="top" secondItem="cTg-Us-hwJ" secondAttribute="bottom" constant="56" id="DdX-LK-bGQ"/>
+                            <constraint firstItem="09u-bW-XPO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="E0Q-cA-RP3"/>
+                            <constraint firstItem="09u-bW-XPO" firstAttribute="leading" secondItem="cTg-Us-hwJ" secondAttribute="leading" id="UL4-Iq-1rk"/>
+                            <constraint firstItem="kaa-hT-x49" firstAttribute="trailing" secondItem="cTg-Us-hwJ" secondAttribute="trailing" id="akG-vz-SZg"/>
+                            <constraint firstItem="Y2V-UG-X35" firstAttribute="top" secondItem="kaa-hT-x49" secondAttribute="bottom" constant="225" id="fLH-bz-u3G"/>
+                            <constraint firstItem="09u-bW-XPO" firstAttribute="top" secondItem="ijb-2Q-Jjl" secondAttribute="bottom" constant="54" id="kav-KE-jhE"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="animateAgainButton" destination="09u-bW-XPO" id="g8j-cE-5qi"/>
+                        <outlet property="exampleLabel" destination="cTg-Us-hwJ" id="zm0-e3-Qib"/>
                         <outlet property="standardAPILabel" destination="kaa-hT-x49" id="SZc-Jf-H9U"/>
-                        <outlet property="testLabel" destination="cTg-Us-hwJ" id="JtO-zj-lte"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

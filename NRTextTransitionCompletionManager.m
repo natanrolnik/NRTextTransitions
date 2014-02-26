@@ -39,7 +39,6 @@
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    NSLog(@"Animation did stop");
     NSString *theKey = [anim valueForKey:@"id"];
     
     if (theKey) {
