@@ -23,5 +23,5 @@ NRTextTransitions uses a similar API to the standard UIView class methods, encap
 
 You have two options:
 
-* Use CocoaPods - Search for `NRTextInstallation` in CocoaPods
+* Use CocoaPods - Add `pod 'NRTextTransitions', '~> 0.1.0'` in your Podfile
 * Copy the files `UIView+NRTextTransitions.h/m` and `NRTextTransitionCompletionManager.h/m`
